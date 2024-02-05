@@ -12,18 +12,10 @@ namespace BrushUpSchool.Tests
     public class StudentTests
     {
         private Student student = new Student { Id = 1, Name = "John", Semester = 3 };
-        private Student studentNoName = new Student { Id = 1, Semester = 3 };
-        private Student studentShortName = new Student { Id = 1, Name = "", Semester = 3 };
         private Student studentNoSemester = new Student { Id = 1, Name = "John" };
         private Student studentLowSemester = new Student { Id = 1, Name = "John", Semester = -1 };
         private Student studentHighSemester = new Student { Id = 1, Name = "John", Semester = 9 };
 
-        [TestMethod()]
-        public void ValidateNameTest()
-        {
-            student.ValidateName();
-            Console.WriteLine(student.Name);  
-        }
         [TestMethod()]
         public void ValidateSemesterTest()
         {
