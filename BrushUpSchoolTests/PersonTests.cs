@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrushUpSchoolTests
+namespace BrushUpSchool.Tests
 {
     [TestClass()]
-    internal class PersonTests
+    public class PersonTests
     {
         private Person person = new Person { Id = 1, Name = "John" };
         private Person personNoName = new Person { Id = 2 };
